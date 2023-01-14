@@ -186,3 +186,66 @@ section {
 .features-right p {
   width: 75%;
 }
+
+/* services styles */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 10rem;
+}
+
+.services-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.services-left h2 {
+  font-size: 4.8rem;
+  border-left: 5px solid var(--color-orange);
+  padding-left: 2rem;
+}
+
+.services-left > p {
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.02);
+}
+
+.service-card h4 {
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  opacity: 0.75;
+}
+
+.services-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.experiences {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  z-index: 1;
+  background-color: var(--color-orange);
+  color: var(--color-light);
+  padding: 5rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1rem 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+.experiences span {
+  font-size: 4.8rem;
+  font-weight: 800;
+}
