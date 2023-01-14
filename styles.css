@@ -329,3 +329,10 @@ section {
   width: 100%;
   filter: grayscale(1) brightness(0) opacity(0.5);
 }
+
+footer {
+  background-color: var(--color-faded-yellow);
+  padding: 10rem 0;
+  text-align: center;
+  opacity: 0.75;
+}
