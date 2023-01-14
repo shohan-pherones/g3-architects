@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-light: #f7f7f7;
+  --color-dark: #313131;
+  --color-faded-yellow: rgba(255, 143, 14, 0.1);
+  --color-orange: #ff900e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.wrapper {
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+/* header styles */
+.header {
+  background-color: var(--color-faded-yellow);
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  gap: 5rem;
+}
+
+.link-item {
+  color: inherit;
+  position: relative;
+  transition: 0.3s;
+}
+
+.link-item:hover {
+  color: var(--color-orange);
+}
+
+.link-item::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--color-orange);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.link-item:hover::after {
+  width: 100%;
+}
